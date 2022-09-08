@@ -17,10 +17,10 @@ export class Item{
   get ItemTemplate() {
     console.log('hello')
     return /*html*/ `
-           <div class="col-3 mb-3 bg-dark text-light p-4 rounded-2 ">
+           <div class=" mb-3 bg-dark text-light p-4 rounded-2 ">
           <div class="d-flex align-items-center justify-content-evenly">
             <h2 class="text-center mb-0 me-2">${this.name}</h2>
-            <h5 class="text-center mb-0">${this.price}</h5>
+            <h5 class="text-center mb-0">$${this.price}</h5>
           </div>
           <div>
             <p class="text-center">${this.description}</p>

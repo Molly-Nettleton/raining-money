@@ -29,11 +29,23 @@
     </nav>
   </header>
   <main>
-    <div class="container-fluid">
+    <div class="row m-3" id="">
+      <div class="col-5 bg-dark text-light p-4 rounded-2" id="">
+        <p class="fs-8">oh man this is crazy what the hecccckkkk</p>
+        <h5>Create a budget</h5>
+        <input class="form-control p-3" type="text" placeholder="Default input">
+        <br>
+        <h5>Set a price</h5>
+        <input class="form-control p-3" type="text" placeholder="Default input">
+        <br>
+        <h5>Type</h5>
+        <input class="form-control p-3" type="text" placeholder="Default input">
+        <div class="text-end p-3"><button>hello!</button></div>
 
-      <div class="row m-3" id="items">
+      </div>
+      <div class="col-7" id="items">
         <!-- TODO template -->
-        <div class="col-3 mb-3 bg-dark text-light p-4 rounded-2 ">
+        <!-- <div class="col-3 mb-3 bg-dark text-light p-4 rounded-2 ">
           <div class="d-flex align-items-center justify-content-evenly">
             <h2 class="text-center mb-0 me-2">${this.name}</h2>
             <h5 class="text-center mb-0">${this.price}</h5>
@@ -42,10 +54,10 @@
             <p class="text-center">${this.description}</p>
           </div>
           <button onclick="app.itemsController.removeItem('${this.id}')" class="btn btn-danger">remove</button>
-        </div>
-
-
+        </div> -->
       </div>
+
+    </div>
     </div>
   </main>
 
@@ -59,10 +71,8 @@
 
       <form onsubmit="app.itemsController.addItem()">
 
-        <div>Total: <span></span></div>
-
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" name="name" required minlength="3" maxlength="20">
+          <input type="text" class="form-control" name="name" required minlength="3" maxlength="30">
           <label for="name">Name</label>
         </div>
 
@@ -84,7 +94,6 @@
 
 
     </div>
-
   </div>
 
   </div>
