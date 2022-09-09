@@ -9,7 +9,8 @@ class AppState extends EventEmitter {
   // values = loadState('values', Value)
 
   /**@type {import('./Models/Item').Item[]} */
-  items = []
+  items = loadState('items', Item)
+  // NOTE ^ saves to local storage
 }
 
 export const appState = new Proxy(new AppState(), {

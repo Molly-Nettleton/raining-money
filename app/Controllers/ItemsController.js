@@ -15,7 +15,7 @@ function _drawItems() {
 export class ItemsController{
 
   constructor() {
-  // _drawItems()
+  _drawItems()
 appState.on('items', _drawItems)
 }
 

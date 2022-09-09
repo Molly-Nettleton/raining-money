@@ -15,7 +15,10 @@ class ItemService{
     let item = new Item(formData)
     appState.items = [item, ...appState.items]
     console.log(formData);
-}
+    saveState('items', appState.items)
+    console.log(appState.items)
+  }
+  // NOTE ^ saves to local storage
 
 }
 
