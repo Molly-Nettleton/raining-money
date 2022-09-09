@@ -31,12 +31,13 @@ export class Item{
         </div>
         <br>
   
-<div><h4>${this.BudgetsTemplate}</h4></diV>
+<div><h6 class="text-danger">${this.BudgetsTemplate}</h6></diV>
 
         <form class="bg-light rounded p-1" onsubmit="app.budgetsController.addBudget('${this.id}')">
           <div class="d-flex w-100 ">
+
             <div class="flex-grow-1">
-              <input class="form-control square-right" type="text" required minlength="2" name="name"
+              <input class="form-control square-right" type="text" name="name"
                 placeholder="Name..." />
               <label for="name" class="visually-hidden">Name</label>
             </div>
