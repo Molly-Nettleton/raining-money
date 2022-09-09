@@ -15,6 +15,7 @@ function _drawItems() {
 export class ItemsController{
 
   constructor() {
+    // TODO uncomment when you want this to draw
   _drawItems()
 appState.on('items', _drawItems)
 }

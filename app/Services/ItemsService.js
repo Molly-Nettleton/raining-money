@@ -6,7 +6,7 @@ import { saveState } from "../Utils/Store.js";
 
 class ItemService{
   removeItem(id) {
-      console.log("is this running")
+      console.log("Item removed.")
     let leftovers = appState.items.filter(item => item.id !== id)
     appState.items = leftovers
   }
